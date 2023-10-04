@@ -135,4 +135,8 @@ body {
         width: auto;
     }
 
+    .rodape{
+        display: block;
+    }
+
 }
