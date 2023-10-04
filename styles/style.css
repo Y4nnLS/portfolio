@@ -113,8 +113,6 @@ body {
     padding: 24px;
     font-weight: 400;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
 }
 
 @media (max-width: 1200px) {
