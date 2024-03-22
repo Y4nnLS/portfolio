@@ -1,51 +1,230 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="hamb.js" async></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-        </nav>
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Estudando para elevar minha carreira de programador
-                <strong class="destaque_titulo">buscando desafios e inovações.</strong>
-            </h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou o Yann Lucas, estudante de Ciência da Computação pela
-                Universidade Positivo(UP) e estou em busca de me tornar um programador cada vez melhor. Posso ajudar em
-                algo?</p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__links__navegacao" href="https://github.com/Y4nnLS">
-                    <img src="./assets/Logo Github.png" alt="Logo do Github">
-                    GitHub</a>
-                <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/yann-lucas-luz/">
-                    <img src="./assets/Logo linkedin.png" alt="Logo do Linkedin">
-                    LinkedIn</a>
-                <a class="apresentacao__links__navegacao" href="https://instagram.com/y4_nls/">
-                    <img src="./assets/Logo instagram.png" alt="Logo do Instagram">
-                    Instagram</a>
-
+    <header>
+        <nav>
+            <img src="asset/carepy_logo-1.svg" alt="">
+            <ul class="navbar-links">
+                <li><a href="#" class="active">Sobre mim</a></li>
+                <li><a href="#portfolio-loc">Portfolio</a></li>
+                <li><a href="#skills-loc">Habilidades</a></li>
+                <li><a href="#contact-loc">Contatos</a></li>
+                
+            </ul>
+            <div class="menu-hamb-button hide-on-desktop">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div> 
+            <div class="github">
+                <button class="button">
+                    <p class="text" onclick="window.open('CV Yann Lucas.pdf', '_blank')"> Currículo </p>
+                  </button>
             </div>
-        </section>
-        <img class="apresentacao__imagem" src="./assets/foto.jpg">
+            
+        </nav>
+        <div class="landing">
+            <div class="intro">
+                <h3><Span>Yann Lucas</Span><br>Programador Python<br>Front & Back-end</h3>
+                <a href="#contact-loc"><button>Entre em contato</button></a>
+            </div>
+            <img class="apresentacao__imagem" src="asset/_6db4e000-a582-4689-b417-4c2bfcc1afcc.jpg">
+            <div class="socials">
+                <div class="line"></div>
+                <a href="https://www.instagram.com/y4_nls/"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.linkedin.com/in/yann-lucas-luz/"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
 
+    </header>
+    <section class="about">
+        <h1>Sobre mim</h1>
+        <div class="description">
+            <div class="line"></div>
+            <p>Meu nome é Yann Lucas, sou estudante de Ciência da Computação pela Universidade Positivo. Estou em busca
+                de oportunidades para aplicar minhas habilidades técnicas em <span>HTML, CSS, JavaScript, MySQL, Python,
+                    GitHub, C#, C e Angular</span>. Possuo Inglês intermediário e estou buscando treinamentos/cursos
+                complementares para aprimorar minhas habilidades. Estou motivado e dedicado a adquirir experiência
+                profissional na área de Tecnologia e Programação. Estou confiante em minha capacidade de aprender
+                rapidamente e contribuir de forma significativa para projetos desafiadores. Estou disponível para novas
+                oportunidades e ansioso para aplicar minhas habilidades e conhecimentos em um ambiente profissional.</p>
+        </div>
+    </section>
+    <section class="skills" id="skills-loc">
+        <h1>Minhas Habilidades</h1>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="asset/python.svg" alt="">
+                <h2>Python</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+                <h2>MatPlotLib</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+                <h2>Numpy</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
+                <h2>Pandas</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/flask.svg" alt="">
+                <h2>Flask</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/html.svg" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/css.svg" alt="">
+                <h2>CSS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/js.svg" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/git.svg" alt="">
+                <h2>GIT</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                <h2>GitHub</h2>
+            </div>
+            
+            <div class="skill-card">
+                <img src="asset/mysql.svg" alt="">
+                <h2>MySQL</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                <h2>C#</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
+                <h2>Angular</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                <h2>C</h2>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio-loc">
+        <h1>Portfolio</h1>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="asset/images/crudflask.png" alt="">
+                <div class="overlay">
+                    <h3>CRUD com Flask</h3>
+                    <p>Aplicação web Flask para gerenciar uma base de dados. Ele permite adicionar, listar, atualizar e
+                        excluir dados
+                        no banco de dados.</p>
+                    <a
+                        href="https://github.com/Y4nnLS/Projeto-CRUD-com-Flask--SQLite-e-SQLAlchemy"><button>Código</button></a>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/gyby.png" alt="">
+                <div class="overlay">
+                    <h3>Gyby</h3>
+                    <p>Frontend para um site de reserva de quartos de hotel</p>
+                    <a href="https://github.com/Y4nnLS/Front-end_Reserva-de-Hotel"><button>Código</button></a>
+                    <a href="https://y4nnls.github.io/Front-end_Reserva-de-Hotel/"><button>Conheça o
+                            projeto</button></a>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/ML.png" alt="">
+                <div class="overlay">
+                    <h3>Machine Learning</h3>
+                    <p> Aplicação web Flask que integra uma interface feita em HTML/CSS com uma API REST, onde utilizei
+                        um modelo de
+                        aprendizado de máquina para uma tarefa de classificação</p>
+                    <a href="https://github.com/Y4nnLS/Machine_Learning-Python"><button>Código</button></a>
+                </div>
+            </div>
 
-    </main>
-    <footer class="rodape">
-        <p>Entre em contato também por e-mail: yann_lucas04@hotmail.com</p>
-    </footer>
-
+        </div>
+        <a href="https://github.com/Y4nnLS"><Button><i class="ri-github-fill"> GitHub</i></Button></a>
+    </section>
+    <section class="experience">
+        <div class="darker-div"></div>
+        <div class="lighter-div">
+            <h1>Experiência</h1>
+            <div class="exp">
+                <h2>Desenvolvedor Front-end</h2>
+                <div class="exp-desc">
+                    <h3>Curitiba, PR</h3>
+                    <p> • Design e planejamento da estrutura do projeto. <br>
+                        • Lider da equipe de desenvolvimento do projeto, trabalhando na organização, divisão e separação
+                        de tarefas.<br>
+                        • Identificação dos critérios e aprimoramento de telas.<br>
+                        • Desenvolvimento de landing pages e sites, utilizando as tecnologias HTML, CSS e JavaScript</p>
+                </div>
+            </div>
+            <div class="exp">
+                <h2>Desenvolvedor Back-end</h2>
+                <div class="exp-desc">
+                    <h3>Curitiba, PR</h3>
+                    <p> • Divisão de projeto e desenvolvimento de software.<br>
+                        • Avaliação, testes e verificação do software e a ligação com o Banco de Dados e com o
+                        Frontend.<br>
+                        • Desenvolvimento de estratégias para garantir o cumprimento das normas e entrega no prazo
+                        estabelecido</p>
+                </div>
+            </div>
+            <div class="exp">
+                <h2>Desenvolvedor Python</h2>
+                <div class="exp-desc">
+                    <h3>Curitiba, PR</h3>
+                    <p> • Planejamento e programação de scripts e automações.<br>
+                        • Automatização de ações repetitivas, aumentando a eficiência no trabalho.<br>
+                        • Desenvolvimento de scripts para resolução de pequenos problemas, facilitando o dia a dia do
+                        usuário. <br>
+                        • Desenvolvimento de estratégias para garantir o cumprimento das normas e entrega no prazo
+                        estabelecido</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-me" id="contact-loc">
+        <h1>Entre em contato</h1>
+        <div class="contact">
+            <div class="contact-card">
+                <i class="ri-message-3-line"></i>
+                <p>yann_lucas04@hotmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="ri-phone-line"></i>
+                <p>(41) 99865-9785</p>
+            </div>
+            <div class="contact-card">
+                <i class="ri-map-pin-3-line"></i>
+                <p>Curitiba, PR</p>
+            </div>
+            <a class="contact-card" href="https://www.linkedin.com/in/yann-lucas-luz/">
+                <i class="ri-linkedin-box-fill"></i>
+                <p>Linkedin</p>
+            </a>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
