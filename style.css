@@ -18,8 +18,8 @@ body {
 }
 
 header {
-  height: 100vh;
-  padding: 36px 100px;
+  height: 10vh;
+  /* padding: 36px 100px; */
   /* background-image: url(asset/_6db4e000-a582-4689-b417-4c2bfcc1afcc.jpg); */
   background-position: right;
   background-size: contain;
@@ -29,11 +29,14 @@ header {
 
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
-  width: 90%;
+  width: 100%;
   z-index: 99;
+  position: fixed;
+  background-color: #34353a;
+  top: 0;
 }
 
 header nav img {
@@ -169,7 +172,7 @@ header nav .search i {
 }
 
 .about {
-  height: 50vh;
+  height: 70vh;
   width: 100vw;
   padding: 100px;
 }
@@ -398,7 +401,7 @@ header nav .search i {
 }
 
 .lighter-div .exp {
-  height: 30vh;
+  height: 1%;
   width: 50vw;
   position: relative;
   margin-left: 20vh;
@@ -422,17 +425,19 @@ header nav .search i {
   left: -5%;
   border-radius: 50%;
   box-shadow: 0px 0px 20px 5px #fec86a;
+  z-index: 1;
 }
 
 .exp-desc::before {
   content: "";
-  height: 190px;
+  height: 100%;
   width: 2.5px;
   background-color: #fbfbfb;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 55%;
   left: -5%;
+  z-index: 0;
 }
 .exp-desc h3 {
   color: #fbfbfb;
@@ -520,9 +525,9 @@ header nav .search i {
 @media screen and (max-width: 767px) {
   /* header */
   header nav{
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    height: 100px;
   }
   header nav img {
     display: none;
@@ -624,7 +629,7 @@ header nav .search i {
     font-size: 40px;
   }
   .skill-card {
-    width: 30vw;
+    width: 70%;
     gap: 1vh;
   }
   

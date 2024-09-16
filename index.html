@@ -13,30 +13,31 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="header">
             <img src="asset/carepy_logo-1.svg" alt="">
             <ul class="navbar-links">
                 <li><a href="#" class="active">Sobre mim</a></li>
                 <li><a href="#portfolio-loc">Portfolio</a></li>
                 <li><a href="#skills-loc">Habilidades</a></li>
                 <li><a href="#contact-loc">Contatos</a></li>
-                
+
             </ul>
             <div class="menu-hamb-button hide-on-desktop">
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
-            </div> 
+            </div>
             <div class="github">
                 <button class="button">
                     <p class="text" onclick="window.open('CV Yann Lucas.pdf', '_blank')"> Currículo </p>
-                  </button>
+                </button>
             </div>
-            
+
         </nav>
+    </header>
         <div class="landing">
             <div class="intro">
-                <h3><Span>Yann Lucas</Span><br>Programador Python<br>Front & Back-end</h3>
+                <h3><Span>Yann Lucas</Span><br>Programador<br>Front & Back-end<br>Scripts & automações</h3>
                 <a href="#contact-loc"><button>Entre em contato</button></a>
             </div>
             <img class="apresentacao__imagem" src="asset/fotoperfil.jpg">
@@ -47,19 +48,27 @@
             </div>
         </div>
 
-    </header>
+    <!-- </header> -->
     <section class="about">
         <h1>Sobre mim</h1>
         <div class="description">
             <div class="line"></div>
-            <p>Meu nome é Yann Lucas, sou estudante de Ciência da Computação pela Universidade Positivo. Estou em busca
-                de oportunidades para aplicar minhas habilidades técnicas em <span>HTML, CSS, JavaScript, MySQL, Python,
-                    GitHub, C#, C e Angular</span>. Possuo Inglês intermediário e estou buscando treinamentos/cursos
-                complementares para aprimorar minhas habilidades. Estou motivado e dedicado a adquirir experiência
-                profissional na área de Tecnologia e Programação. Estou confiante em minha capacidade de aprender
-                rapidamente e contribuir de forma significativa para projetos desafiadores. Estou disponível para novas
-                oportunidades e ansioso para aplicar minhas habilidades e conhecimentos em um ambiente profissional.</p>
+            <p>Meu chamo Yann Lucas, sou estudante de Ciência da Computação pela Universidade Positivo. Estou
+                constantemente em busca de oportunidades para aplicar minhas habilidades técnicas em <span>HTML, CSS,
+                    JavaScript, Banco de Dados, Python,
+                    GitHub, Java, Docker e Vue.js</span>. Possuo Inglês intermediário, realizei cursos complementares em
+                HTML, CSS, JS, C e Python e também participei de
+                maratonas de programação realizadas pela Universidade Positivo buscando aprimorar minhas habilidades.
+                Estou motivado e dedicado em adquirir mais
+                experiência profissional e me desenvolver cada vez mais na área de desenvolvimento/programação. Estou
+                confiante
+                em minha capacidade de aprender rapidamente e contribuir de forma significativa para projetos
+                desafiadores.
+                Estou disponível para novas oportunidades e ansioso para aplicar minhas habilidades e conhecimentos em
+                um
+                ambiente profissional.</p>
         </div>
+
     </section>
     <section class="skills" id="skills-loc">
         <h1>Minhas Habilidades</h1>
@@ -69,7 +78,8 @@
                 <h2>Python</h2>
             </div>
             <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
                 <h2>MatPlotLib</h2>
             </div>
             <div class="skill-card">
@@ -77,7 +87,8 @@
                 <h2>Numpy</h2>
             </div>
             <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
                 <h2>Pandas</h2>
             </div>
             <div class="skill-card">
@@ -104,7 +115,7 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
                 <h2>GitHub</h2>
             </div>
-            
+
             <div class="skill-card">
                 <img src="asset/mysql.svg" alt="">
                 <h2>MySQL</h2>
@@ -121,8 +132,25 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
                 <h2>C</h2>
             </div>
-            
-            
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                <h2>Java</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                <h2>Docker</h2>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
+                <h2>Vue.js</h2>
+            </div>
+            <div class="skill-card">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                <h2>PostgreSQL</h2>
+            </div>
+
+
         </div>
     </section>
     <section class="portfolio" id="portfolio-loc">
@@ -168,13 +196,32 @@
         <div class="lighter-div">
             <h1>Experiência</h1>
             <div class="exp">
+                <h2>Estágio de Desenvolvimento</h2>
+                <div class="exp-desc">
+                    <h3>Curitiba, PR</h3>
+                    <p> • Desenvolvimento de APIs Restful utilizando Quarkus, incluindo criação de CRUDs, integração com
+                        SGBDs (H2, PostgreSQL) e implementação de endpoints personalizados.<br><br>
+                        • Criação de interfaces com Vue.js e PrimeVue, implementando paginação, filtros e exibição de
+                        dados em tempo real.<br><br>
+                        • Integração com Keycloak para autenticação e autorização, incluindo configuração de containers
+                        Docker para hospedagem e auditoria com Envers.<br><br>
+                        • Implementação de mensageria com ActiveMQ e Artemis, criando aplicações produtoras e
+                        consumidoras e configurando ambientes Docker.<br><br>
+                        • Refatoração de código com DTOs e padronização de interfaces usando Vuelidate para validação de
+                        formulários.<br><br>
+                        • Monitoramento de aplicações com healthchecks, incluindo monitoramento de recursos como broker,
+                        banco de dados e consumo de memória.
+                    </p>
+                </div>
+            </div>
+            <div class="exp">
                 <h2>Desenvolvedor Front-end</h2>
                 <div class="exp-desc">
                     <h3>Curitiba, PR</h3>
-                    <p> • Design e planejamento da estrutura do projeto. <br>
+                    <p> • Design e planejamento da estrutura do projeto. <br><br>
                         • Lider da equipe de desenvolvimento do projeto, trabalhando na organização, divisão e separação
-                        de tarefas.<br>
-                        • Identificação dos critérios e aprimoramento de telas.<br>
+                        de tarefas.<br><br>
+                        • Identificação dos critérios e aprimoramento de telas.<br><br>
                         • Desenvolvimento de landing pages e sites, utilizando as tecnologias HTML, CSS e JavaScript</p>
                 </div>
             </div>
@@ -182,9 +229,9 @@
                 <h2>Desenvolvedor Back-end</h2>
                 <div class="exp-desc">
                     <h3>Curitiba, PR</h3>
-                    <p> • Divisão de projeto e desenvolvimento de software.<br>
+                    <p> • Divisão de projeto e desenvolvimento de software.<br><br>
                         • Avaliação, testes e verificação do software e a ligação com o Banco de Dados e com o
-                        Frontend.<br>
+                        Frontend.<br><br>
                         • Desenvolvimento de estratégias para garantir o cumprimento das normas e entrega no prazo
                         estabelecido</p>
                 </div>
@@ -193,10 +240,10 @@
                 <h2>Desenvolvedor Python</h2>
                 <div class="exp-desc">
                     <h3>Curitiba, PR</h3>
-                    <p> • Planejamento e programação de scripts e automações.<br>
-                        • Automatização de ações repetitivas, aumentando a eficiência no trabalho.<br>
+                    <p> • Planejamento e programação de scripts e automações.<br><br>
+                        • Automatização de ações repetitivas, aumentando a eficiência no trabalho.<br><br>
                         • Desenvolvimento de scripts para resolução de pequenos problemas, facilitando o dia a dia do
-                        usuário. <br>
+                        usuário. <br><br>
                         • Desenvolvimento de estratégias para garantir o cumprimento das normas e entrega no prazo
                         estabelecido</p>
                 </div>
