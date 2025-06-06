@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Trabalhos da Faculdade</title>
+
+    <!-- Vincule aqui seu CSS que define .portfolio, .portfolio-cards, .portfolio-card, .overlay etc. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Exemplo mínimo de estilos, caso queira testar sem CSS externo -->
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <img src="asset/carepy_logo-1.svg" alt="">
+            <ul class="navbar-links">
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="index.html/#portfolio-loc">Portfolio</a></li>
+                <li><a href="index.html/#skills-loc">Habilidades</a></li>
+                <li><a href="index.html/#contact-loc">Contatos</a></li>
+                <li><a href="trabalhosFaculdade.html" class="active">Trabalhos da Faculdade</a></li>
+
+            </ul>
+            <div class="menu-hamb-button hide-on-desktop">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <div class="github">
+                <button class="button">
+                    <p class="text" onclick="window.open('CV Yann Lucas.pdf', '_blank')"> Currículo </p>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    <section class="portfolio" id="portfolio-loc">
+        <h1>Portfolio – Trabalhos da Faculdade</h1>
+
+        <div class="portfolio-cards">
+            <!--
+                Para cada arquivo dentro da pasta “trabalhosFaculdade”, duplique este bloco
+                e substitua:
+                  1. o src da <img> por algum ícone ou thumbnail que represente cada trabalho;
+                  2. o texto de <h3> pelo nome do trabalho;
+                  3. o texto de <p> pela breve descrição (opcional);
+                  4. o href do botão “Código” pelo caminho relativo até o arquivo na pasta;
+                     e inclua o atributo download para forçar o download.
+            -->
+
+            <!-- Exemplo de 3 cards estáticos: -->
+            <div class="portfolio-card">
+                <img src="asset/images/trabalho1-thumb.png" alt="Fundamentos da educação" />
+                <div class="overlay">
+                    <h3>Ideologias na Cultura</h3>
+                    <!-- <p>Implementação de algoritmos de busca e ordenação em Java.</p> -->
+                    <a href="trabalhosFaculdade\Ideologias-na-Cultura.pptx" download>
+                        <button>Download</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <img src="asset/images/trabalho2-thumb.png" alt="Fundamentos da educação" />
+                <div class="overlay">
+                    <h3>Fundamentos ontológicos e históricos</h3>
+                    <!-- <p>Projeto de um sistema de cadastro usando MySQL e diagramas ER.</p> -->
+                    <a href="trabalhosFaculdade\Trabalho e educação - fundamentos ontológicos e históricos.pptx"
+                        download>
+                        <button>Download</button>
+                    </a>
+                </div>
+            </div>
+            <!-- Fim dos exemplos estáticos -->
+
+            <!-- 
+                Para adicionar mais trabalhos, basta copiar um dos blocos acima,
+                colar abaixo e alterar:
+                  • caminho do <img> (thumbnail ou ícone);
+                  • <h3> e <p> para cada projeto;
+                  • href do link (apontando para o arquivo correto dentro de trabalhosFaculdade).
+            -->
+        </div>
+
+        <!-- Caso queira um link geral para “ver todos” ou para seu repositório no GitHub -->
+        <div class="ver-todos">
+            <a href="https://github.com/Y4nnLS">
+                <button>
+                    <i class="ri-github-fill"></i> Ver todos no GitHub
+                </button>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
