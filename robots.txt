@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://y4nnls.github.io/portfolio/sitemap.xml

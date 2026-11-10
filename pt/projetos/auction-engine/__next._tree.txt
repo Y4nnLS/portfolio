@@ -1,0 +1,8 @@
+:HL["/portfolio/_next/static/chunks/3wh1erh4-wdyl.css","style"]
+:HL["/portfolio/_next/static/media/605ce01b664af129-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/portfolio/_next/static/media/75cb990346c55dc4-s.p.40bho2kviej2o.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+4:[["children",{"s":"__PAGE__","h":160}]]
+3:[["children",{"s":{"n":"slug","t":"d","k":"auction-engine","s":[]},"h":96,"c":"$Q4"}]]
+2:[["children",{"s":"projetos","h":96,"c":"$Q3"}]]
+1:[["children",{"s":{"n":"locale","t":"d","k":"pt","s":[]},"h":112,"c":"$Q2"}]]
+0:{"b":"hU1eW5BQ0rjYWb7csduqD","t":{"t":{"s":"","h":84,"c":"$Q1"}}}
